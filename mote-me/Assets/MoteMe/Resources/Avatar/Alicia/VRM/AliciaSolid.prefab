@@ -4504,7 +4504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690ea0146224b8b4694a1925dddeb352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Meta: {fileID: 114191051578800440}
+  Meta: {fileID: 114027677313165990}
 --- !u!114 &4196121874851522908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4517,8 +4517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3869812175467a143ab9cd865752b4a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Avatar: {fileID: 90339626241977382}
-  Description: {fileID: 114297709630332050}
+  Avatar: {fileID: 90022564623265744}
+  Description: {fileID: 114100365106797262}
 --- !u!95 &2045939503092042573
 Animator:
   serializedVersion: 3
@@ -4528,7 +4528,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9112811310356247425}
   m_Enabled: 1
-  m_Avatar: {fileID: 90339626241977382}
+  m_Avatar: {fileID: 90022564623265744}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -4564,16 +4564,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirstPersonBone: {fileID: 7967205104986456090}
-  FirstPersonOffset: {x: 0, y: 0.06, z: 0}
+  FirstPersonOffset: {x: 0, y: 0.042999983, z: 0.07}
   Renderers:
   - Renderer: {fileID: 8512034646652284166}
     FirstPersonFlag: 0
   - Renderer: {fileID: 2837028254526571104}
     FirstPersonFlag: 0
   - Renderer: {fileID: 7744411816721456418}
-    FirstPersonFlag: 0
+    FirstPersonFlag: 2
   - Renderer: {fileID: 2180438386935021200}
-    FirstPersonFlag: 0
+    FirstPersonFlag: 2
   - Renderer: {fileID: 1264650546649506008}
     FirstPersonFlag: 0
   - Renderer: {fileID: 4054992268919551948}
@@ -4787,7 +4787,7 @@ Transform:
   m_Father: {fileID: 8447471576793957629}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!90 &90339626241977382
+--- !u!90 &90022564623265744
 Avatar:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6687,7 +6687,7 @@ Avatar:
     4185756595: Character001/root/waist/upperbody/skirt_07_01/skirt_07_02
     4211986731: Character001/root/waist/upperbody/upperbody01/shoulder_R/arm_R/elbow_R/wrist_R/third1_R/third2_R/third3_R
     4247021152: Character001/root/waist/upperbody/upperbody01/shoulder_L/arm_L/elbow_L/wrist_L/thumb0_L/thumb1_L
---- !u!114 &114191051578800440
+--- !u!114 &114027677313165990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6713,7 +6713,7 @@ MonoBehaviour:
   OtherPermissionUrl: http://3d.nicovideo.jp/alicia/rule.html
   LicenseType: 8
   OtherLicenseUrl: http://3d.nicovideo.jp/alicia/rule.html
---- !u!114 &114297709630332050
+--- !u!114 &114100365106797262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
