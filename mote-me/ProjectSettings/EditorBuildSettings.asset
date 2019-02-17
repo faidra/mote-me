@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/MoteMe/Preparation/Preparation.unity
+    guid: 2d4574582f844684e8c0c9e0039255dc
+  - enabled: 1
+    path: Assets/MoteMe/Test/Test.unity
+    guid: e58e423c8e7413e448389871288bcd05
   m_configObjects: {}
