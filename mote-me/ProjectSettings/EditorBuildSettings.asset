@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MoteMe/Test/Test.unity
     guid: e58e423c8e7413e448389871288bcd05
+  - enabled: 1
+    path: Assets/MoteMe/Result/Result.unity
+    guid: 299ee064b275c2747893cd375c2bb874
   m_configObjects: {}
