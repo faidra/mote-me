@@ -7,5 +7,6 @@ public class PreparationInstaller : MonoInstaller
         Container.Bind<VRMAccessor>().AsCached();
         Container.Bind<AvatarImporter>().AsCached();
         Container.Bind<IKApplier>().AsCached();
+        Container.Bind<SceneManager>().AsSingle();
     }
 }

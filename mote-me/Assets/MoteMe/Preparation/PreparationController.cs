@@ -2,11 +2,14 @@
 using UniRx;
 using UniRx.Async;
 using UnityEngine.UI;
+using Zenject;
 
 public class PreparationController : MonoBehaviour
 {
     [SerializeField]
     Button PlayButton;
+    [Inject]
+    SceneManager SceneManager;
 
     void Start()
     {
@@ -17,6 +20,6 @@ public class PreparationController : MonoBehaviour
 
     void GoToPlay()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync("test", UnityEngine.SceneManagement.LoadSceneMode.Single).ToUniTask().Forget();
+        SceneManager.ChangeToAsync("test").Forget();
     }
 }
