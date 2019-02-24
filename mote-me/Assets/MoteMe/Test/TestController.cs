@@ -7,10 +7,6 @@ using Valve.VR;
 public class TestController : MonoBehaviour
 {
     [Inject]
-    AvatarImporter AvatarImporter;
-    [Inject]
-    IKApplier IKApplier;
-    [Inject]
     LongPressManager LongPressManager;
     [Inject]
     SceneManager SceneManager;
@@ -20,10 +16,6 @@ public class TestController : MonoBehaviour
     void Start()
     {
         poseAction = SteamVR_Input.GetBooleanAction("Pose");
-
-        AvatarImporter.CreateDefaultModel()
-            .ContinueWith(avatar => IKApplier.Apply(avatar))
-            .Forget();
 
         LongPressManager.LongPressAsObservable(IsPosePressed)
             .First()
