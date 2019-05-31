@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.moteme.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\Kurimoto\\Desktop\\Store\\mote-me\\mote-me\\actions.json",
+      "action_manifest_path": "C:\\Users\\kurimoto\\Desktop\\mote-me\\mote-me\\actions.json",
       "strings": {
         "en_us": {
           "name": "mote-me [Testing]"
