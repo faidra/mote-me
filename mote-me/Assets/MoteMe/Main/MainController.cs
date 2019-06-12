@@ -17,7 +17,7 @@ public class MainController : MonoBehaviour
     {
         LongPressManager.LongPressAsObservable(IsPosePressed)
             .First()
-            .ContinueWith(_ => SceneManager.ChangeToAsync("result").ToObservable())
+            .ContinueWith(_ => SceneManager.ChangeToAsync(SceneManager.SceneId.Result).ToObservable())
             .Subscribe()
             .AddTo(this);
     }

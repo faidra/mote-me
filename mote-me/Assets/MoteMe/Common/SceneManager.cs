@@ -1,10 +1,17 @@
-﻿using UnityEngine;
-using UniRx.Async;
+﻿using UniRx.Async;
 
 public class SceneManager
 {
-    public UniTask ChangeToAsync(string sceneName)
+    public enum SceneId
     {
-        return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName, UnityEngine.SceneManagement.LoadSceneMode.Single).ToUniTask();
+        Preparation,
+        Main,
+        Result,
+        Watch,
+    }
+
+    public UniTask ChangeToAsync(SceneId sceneId)
+    {
+        return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneId.ToString(), UnityEngine.SceneManagement.LoadSceneMode.Single).ToUniTask();
     }
 }

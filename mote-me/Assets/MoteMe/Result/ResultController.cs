@@ -19,9 +19,9 @@ public class ResultController : MonoBehaviour
     void Start()
     {
         Observable.Merge(
-            RetryButton.OnClickAsObservable().Select(_ => "main"),
-            WatchButton.OnClickAsObservable().Select(_ => "watch"),
-            BackButton.OnClickAsObservable().Select(_ => "preparation"))
+            RetryButton.OnClickAsObservable().Select(_ => SceneManager.SceneId.Main),
+            WatchButton.OnClickAsObservable().Select(_ => SceneManager.SceneId.Watch),
+            BackButton.OnClickAsObservable().Select(_ => SceneManager.SceneId.Preparation))
         .First()
         .Select(SceneManager.ChangeToAsync)
         .Subscribe(task => task.Forget())

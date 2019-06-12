@@ -20,6 +20,6 @@ public class PreparationController : MonoBehaviour
 
     void GoToPlay()
     {
-        SceneManager.ChangeToAsync("main").Forget();
+        SceneManager.ChangeToAsync(SceneManager.SceneId.Main).Forget();
     }
 }
