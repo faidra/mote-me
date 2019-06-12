@@ -10,13 +10,11 @@ public class TestController : MonoBehaviour
     LongPressManager LongPressManager;
     [Inject]
     SceneManager SceneManager;
-
-    SteamVR_Action_Boolean poseAction;
+    [SerializeField]
+    SteamVR_Action_Boolean menuAction;
 
     void Start()
     {
-        poseAction = SteamVR_Input.GetBooleanAction("Pose");
-
         LongPressManager.LongPressAsObservable(IsPosePressed)
             .First()
             .ContinueWith(_ => SceneManager.ChangeToAsync("result").ToObservable())
@@ -26,6 +24,6 @@ public class TestController : MonoBehaviour
 
     bool IsPosePressed()
     {
-        return poseAction.GetStateDown(SteamVR_Input_Sources.Any);
+        return menuAction.GetStateDown(SteamVR_Input_Sources.Any);
     }
 }
