@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-public class TestInstaller : MonoInstaller
+public class MainInstaller : MonoInstaller
 {
     public override void InstallBindings()
     {

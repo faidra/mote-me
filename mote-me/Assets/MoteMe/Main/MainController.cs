@@ -4,7 +4,7 @@ using UniRx.Async;
 using UniRx;
 using Valve.VR;
 
-public class TestController : MonoBehaviour
+public class MainController : MonoBehaviour
 {
     [Inject]
     LongPressManager LongPressManager;

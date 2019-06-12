@@ -19,7 +19,7 @@ public class ResultController : MonoBehaviour
     void Start()
     {
         Observable.Merge(
-            RetryButton.OnClickAsObservable().Select(_ => "test"),
+            RetryButton.OnClickAsObservable().Select(_ => "main"),
             WatchButton.OnClickAsObservable().Select(_ => "watch"),
             BackButton.OnClickAsObservable().Select(_ => "preparation"))
         .First()

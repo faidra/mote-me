@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/MoteMe/Preparation/Preparation.unity
     guid: 2d4574582f844684e8c0c9e0039255dc
   - enabled: 1
-    path: Assets/MoteMe/Test/Test.unity
+    path: Assets/MoteMe/Main/Main.unity
     guid: e58e423c8e7413e448389871288bcd05
   - enabled: 1
     path: Assets/MoteMe/Result/Result.unity
