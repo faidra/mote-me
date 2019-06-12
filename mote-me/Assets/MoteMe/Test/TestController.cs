@@ -24,6 +24,6 @@ public class TestController : MonoBehaviour
 
     bool IsPosePressed()
     {
-        return menuAction.GetStateDown(SteamVR_Input_Sources.Any);
+        return menuAction.GetState(SteamVR_Input_Sources.Any);
     }
 }
